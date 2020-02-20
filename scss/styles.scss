@@ -1,0 +1,36 @@
+$myfont: 'Lato', sans-serif;
+$myColor: pink;
+
+@mixin bradius5 {
+    border-radius: .5em;
+    border: 1px solid rgb(126, 126, 126)
+}
+
+body {
+    background-color: bisque;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+    color: $myColor;
+}
+
+.mybutton {
+    background: pink;
+}
+.card {
+    @include bradius5;
+    background-color: #fff;
+    border-radius: .4em;
+    padding: 1em;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.stretch {
+    display: grid;
+    justify-self: stretch;
+}
+
+@import 'layout';
